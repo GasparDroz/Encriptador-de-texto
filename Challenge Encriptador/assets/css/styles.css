@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #F3F5FC;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo {
+    padding-top: 20px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+
+section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 50vw;
+    justify-content: space-between;
+}
+
+section:first-of-type .btns-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.text-area {
+    resize: none;
+    border: none;
+    color: #0A3871;
+    margin-top: 80px;
+    text-transform: lowercase;
+}
+.text-area:focus {
+    outline: none;
+}
+::placeholder {
+    color: #0A3871;
+}
+.informacion {
+    color: #495057;
+    font-size: 18px;
+}
+.btn-desencriptar {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 25px;
+    width: 328px;
+}
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    color: #fff;
+    height: 67px;
+    width: 328px;
+}
+
+
+
+/* Seccion donde se visualiza el mensaje */
+.section-2 {
+    display: flex;
+    height: 79vh;
+    width: 35vw;
+    z-index: 1;
+}
+.section-2 .btns {
+    display: flex;
+    align-items: flex-end;
+}
+.mensaje {
+    height: 78.5vh;
+    width: 30vw;
+    background-color: #fff;
+    background-image: url('../img/Muñeco.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 88px;
+    padding: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    position: fixed;
+    resize: none;
+}
+.mensaje:focus {
+    outline: none;
+}
+
+.btn-copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-top: 535px;
+    margin-left: 200px;
+    position: absolute;
+    width: 330px;
+    display: none;
+}
+@media screen and (max-width: 1400px) {
+    .btn-copiar {
+        margin-left: 150px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .btn-copiar {
+        margin-left: 150px;
+        width: 275px;
+    }
+}
+
+/*Vista para tablets*/
+@media screen and (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .logo {
+        margin-left: 50px;
+    }
+    section:first-of-type{
+        height: 80vh;
+        width: 100%;
+    }
+
+    .btn-encriptar {
+        width: 45.5%;
+    }
+    .btn-desencriptar {
+        width: 45.5%;
+    }
+
+
+
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: -100px;
+        width: 85vw;
+        height: 30vh;
+        padding-bottom: 20px;
+    }
+    .mensaje{
+        background-image: none;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 30px;
+        width: 85vw;
+        height: 30vh;
+        position: relative;
+        flex-direction: column;
+    }
+    .btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-copiar {
+        width: 80vw;
+        margin-left: 220px;
+        height: 50px;
+        margin-bottom: 1em;
+        font-size: 0.825em;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .logo {
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    section:first-of-type {
+        margin-left: -40px;
+    }
+    .btns-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn-encriptar {
+        width: 100%;
+    }
+    .btn-desencriptar {
+        margin-top: 1em;
+        width: 100%;
+    }
+
+
+    .section-2 {
+        margin-left: -130px;
+    }
+    .informacion {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+}
